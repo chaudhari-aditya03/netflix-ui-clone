@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <!-- Album Art Section -->
+            <div class="album-art">
+                <div class="album-cover">
+                    <img src="https://via.placeholder.com/300x300/FF6B6B/FFFFFF?text=Album+Art" alt="Album Art" id="album-img">
+                    <div class="vinyl-effect"></div>
+                </div>
+            </div>
+
+            <!-- Song Info Section -->
+            <div class="song-info">
+                <h2 class="song-title" id="song-title">Song Title</h2>
+                <p class="artist-name" id="artist-name">Artist Name</p>
+            </div>
+
+            <!-- Progress Bar Section -->
+            <div class="progress-container">
+                <span class="time current-time" id="current-time">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                    <div class="progress-dot" id="progress-dot"></div>
+                </div>
+                <span class="time total-time" id="total-time">0:00</span>
+            </div>
+
+            <!-- Controls Section -->
+            <div class="controls">
+                <button class="control-btn" id="shuffle-btn">
+                    <i class="fas fa-random"></i>
+                </button>
+                <button class="control-btn" id="prev-btn">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="control-btn play-btn" id="play-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="control-btn" id="next-btn">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+                <button class="control-btn" id="repeat-btn">
+                    <i class="fas fa-redo"></i>
+                </button>
+            </div>
+
+            <!-- Volume Control Section -->
+            <div class="volume-container">
+                <i class="fas fa-volume-up volume-icon"></i>
+                <div class="volume-bar">
+                    <div class="volume-level" id="volume-level"></div>
+                    <div class="volume-dot" id="volume-dot"></div>
+                </div>
+            </div>
+
+            <!-- Playlist Section -->
+            <div class="playlist-container">
+                <div class="playlist-header">
+                    <h3>Playlist</h3>
+                    <span class="playlist-count" id="playlist-count">0 songs</span>
+                </div>
+                <ul class="playlist" id="playlist">
+                    <li class="playlist-item active">
+                        <div class="playlist-info">
+                            <span class="playlist-number">1</span>
+                            <div class="playlist-details">
+                                <p class="playlist-song">Summer Vibes</p>
+                                <p class="playlist-artist">Artist One</p>
+                            </div>
+                        </div>
+                        <span class="playlist-duration">3:45</span>
+                    </li>
+                    <li class="playlist-item">
+                        <div class="playlist-info">
+                            <span class="playlist-number">2</span>
+                            <div class="playlist-details">
+                                <p class="playlist-song">Night Dreams</p>
+                                <p class="playlist-artist">Artist Two</p>
+                            </div>
+                        </div>
+                        <span class="playlist-duration">4:12</span>
+                    </li>
+                    <li class="playlist-item">
+                        <div class="playlist-info">
+                            <span class="playlist-number">3</span>
+                            <div class="playlist-details">
+                                <p class="playlist-song">Ocean Waves</p>
+                                <p class="playlist-artist">Artist Three</p>
+                            </div>
+                        </div>
+                        <span class="playlist-duration">3:28</span>
+                    </li>
+                    <li class="playlist-item">
+                        <div class="playlist-info">
+                            <span class="playlist-number">4</span>
+                            <div class="playlist-details">
+                                <p class="playlist-song">City Lights</p>
+                                <p class="playlist-artist">Artist Four</p>
+                            </div>
+                        </div>
+                        <span class="playlist-duration">4:05</span>
+                    </li>
+                    <li class="playlist-item">
+                        <div class="playlist-info">
+                            <span class="playlist-number">5</span>
+                            <div class="playlist-details">
+                                <p class="playlist-song">Midnight Jazz</p>
+                                <p class="playlist-artist">Artist Five</p>
+                            </div>
+                        </div>
+                        <span class="playlist-duration">5:20</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
